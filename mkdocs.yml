@@ -1,0 +1,23 @@
+site_name: Plataforma de Análise de Ações
+site_description: Projeto Universitário - Plataforma de Investimento com IA
+
+theme:
+  name: material
+  palette:
+    primary: blue grey
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Glossário: glossario.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

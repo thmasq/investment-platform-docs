@@ -1,0 +1,693 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Projeto Universitário - Plataforma de Investimento com IA">
+      
+      
+      
+      
+      
+        <link rel="next" href="glossario/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Plataforma de Análise de Ações</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plano-de-projeto-de-plataforma-de-investimento" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Plataforma de Análise de Ações" class="md-header__button md-logo" aria-label="Plataforma de Análise de Ações" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Plataforma de Análise de Ações
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="glossario/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossário
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Plataforma de Análise de Ações" class="md-nav__button md-logo" aria-label="Plataforma de Análise de Ações" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Plataforma de Análise de Ações
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral do Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-e-historias-de-usuarios-da-epic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise e Histórias de Usuários da Epic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise e Histórias de Usuários da Epic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epic-1-infraestrutura-e-coleta-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 1: Infraestrutura e Coleta de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-2-implementacao-do-modelo-de-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 2: Implementação do Modelo de ML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-3-regime-de-mercado-e-geracao-de-sinais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 3: Regime de Mercado e Geração de Sinais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-4-mecanismo-de-dimensionamento-de-posicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 4: Mecanismo de Dimensionamento de Posição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-5-desenvolvimento-de-api-de-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 5: Desenvolvimento de API de Backend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-6-interface-do-usuario-e-painel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 6: Interface do Usuário e Painel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-7-painel-de-estatisticas-e-analises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 7: Painel de Estatísticas e Análises
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="glossario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral do Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-e-historias-de-usuarios-da-epic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise e Histórias de Usuários da Epic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise e Histórias de Usuários da Epic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epic-1-infraestrutura-e-coleta-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 1: Infraestrutura e Coleta de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-2-implementacao-do-modelo-de-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 2: Implementação do Modelo de ML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-3-regime-de-mercado-e-geracao-de-sinais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 3: Regime de Mercado e Geração de Sinais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-4-mecanismo-de-dimensionamento-de-posicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 4: Mecanismo de Dimensionamento de Posição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-5-desenvolvimento-de-api-de-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 5: Desenvolvimento de API de Backend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-6-interface-do-usuario-e-painel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 6: Interface do Usuário e Painel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epic-7-painel-de-estatisticas-e-analises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Epic 7: Painel de Estatísticas e Análises
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="plano-de-projeto-de-plataforma-de-investimento">Plano de Projeto de Plataforma de Investimento<a class="headerlink" href="#plano-de-projeto-de-plataforma-de-investimento" title="Permanent link">&para;</a></h1>
+<p><em>Projeto Universitário - 3 Meses | Tamanho da Equipe: 4</em></p>
+<h2 id="visao-geral-do-projeto">Visão Geral do Projeto<a class="headerlink" href="#visao-geral-do-projeto" title="Permanent link">&para;</a></h2>
+<p>Uma plataforma de investimento que utiliza redes neurais <a href="glossario/#x">XLSTM</a> e <a href="glossario/#f">finBERT</a> para análise inteligente de ações, com classificação de <a href="glossario/#r">regime de volatilidade</a>, identificação de <a href="glossario/#r">reversão à média</a>/<a href="glossario/#m">momentum</a> e <a href="glossario/#d">dimensionamento automatizado de posições</a> com painel de estatísticas abrangente.</p>
+<h2 id="analise-e-historias-de-usuarios-da-epic">Análise e Histórias de Usuários da Epic<a class="headerlink" href="#analise-e-historias-de-usuarios-da-epic" title="Permanent link">&para;</a></h2>
+<h3 id="epic-1-infraestrutura-e-coleta-de-dados">Epic 1: Infraestrutura e Coleta de Dados<a class="headerlink" href="#epic-1-infraestrutura-e-coleta-de-dados" title="Permanent link">&para;</a></h3>
+<p><strong>Duração:</strong> Semanas 1-2 | <strong>Líder:</strong> Engenheiro de Dados</p>
+<p><strong>Histórias de Usuário:</strong>
+- Como sistema, preciso coletar dados de ações em tempo real e históricos de fontes confiáveis ​​(Yahoo Finance, Alpha Vantage, etc.)
+- Como desenvolvedor, preciso de um pipeline de dados robusto que lide com dados ausentes, <a href="glossario/#a">ações corporativas</a> e verificações de qualidade de dados
+- Como sistema, preciso armazenar os dados processados ​​em um formato eficiente para consumo do modelo de ML
+- Como desenvolvedor, preciso de utilitários de pré-processamento de dados para engenharia de recursos</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Dados diários de <a href="glossario/#o">OHLCV</a> para mais de 500 ações de diversas <a href="glossario/#b">bolsas</a>
+- Integração de dados de sentimento de notícias para <a href="glossario/#f">finBERT</a>
+- Pipeline de validação e limpeza de dados
+- Banco de dados SQLite/PostgreSQL com indexação adequada</p>
+<h3 id="epic-2-implementacao-do-modelo-de-ml">Epic 2: Implementação do Modelo de ML<a class="headerlink" href="#epic-2-implementacao-do-modelo-de-ml" title="Permanent link">&para;</a></h3>
+<p><strong>Duração:</strong> Semanas 2 a 4 | <strong>Líder:</strong> Engenheiro de ML</p>
+<p><strong>Histórias de Usuário:</strong>
+- Como pesquisador quantitativo, preciso de um modelo <a href="glossario/#x">XLSTM</a> que possa capturar dependências de longo prazo em sequências de preços
+- Como sistema, preciso de integração com o <a href="glossario/#f">finBERT</a> para <a href="glossario/#a">análise de sentimento</a> de notícias financeiras e teleconferências de resultados
+- Como desenvolvedor, preciso de recursos de versionamento de modelos e rastreamento de experimentos
+- Como sistema, preciso de pipelines automatizados de retreinamento de modelos</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Implementação do <a href="glossario/#x">XLSTM</a> usando bibliotecas existentes (PyTorch/TensorFlow)
+- Integração com o <a href="glossario/#f">finBERT</a> para pontuação de sentimento
+- Benchmarks de desempenho do modelo e métricas de validação
+- Ambiente de treinamento em contêiner</p>
+<h3 id="epic-3-regime-de-mercado-e-geracao-de-sinais">Epic 3: Regime de Mercado e Geração de Sinais<a class="headerlink" href="#epic-3-regime-de-mercado-e-geracao-de-sinais" title="Permanent link">&para;</a></h3>
+<p><strong>Duração:</strong> Semanas 3 a 5 | <strong>Líder:</strong> Analista Quantitativo</p>
+<p><strong>Histórias de Usuário:</strong>
+- Como <a href="glossario/#t">trader</a>, preciso identificar o <a href="glossario/#r">regime de volatilidade</a> atual (baixa/média/alta) para diferentes ações
+- Como sistema, preciso detectar oportunidades de <a href="glossario/#r">reversão à média</a> nos preços das ações
+- Como <a href="glossario/#t">trader</a>, preciso identificar sinais de <a href="glossario/#m">momentum</a> para estratégias de acompanhamento de tendências
+- Como sistema, preciso de <a href="glossario/#i">intervalos de confiança</a> para cada classificação</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Classificador de <a href="glossario/#r">regime de volatilidade</a> com precisão de mais de 70% em dados históricos
+- Detecção de <a href="glossario/#r">reversão à média</a> usando testes estatísticos e recursos de ML
+- Identificação de <a href="glossario/#m">momentum</a> usando <a href="glossario/#i">indicadores técnicos</a> e <a href="glossario/#p">padrões de preços</a>
+- Métricas de qualidade de sinal e resultados de <a href="glossario/#b">backtesting</a></p>
+<h3 id="epic-4-mecanismo-de-dimensionamento-de-posicao">Epic 4: Mecanismo de Dimensionamento de Posição<a class="headerlink" href="#epic-4-mecanismo-de-dimensionamento-de-posicao" title="Permanent link">&para;</a></h3>
+<p><strong>Duração:</strong> Semanas 4 a 6 | <strong>Líder:</strong> Desenvolvedor de <a href="glossario/#g">Gestão de Riscos</a></p>
+<p><strong>Histórias de Usuários:</strong>
+- Como gestor de <a href="glossario/#p">portfólio</a>, preciso de <a href="glossario/#d">dimensionamento dinâmico de posições</a> com base na <a href="glossario/#v">volatilidade</a> e nos níveis de confiança
+- Como sistema, preciso de tamanhos de posições ajustados ao risco usando o <a href="glossario/#c">Critério de Kelly</a> ou métodos semelhantes
+- Como <a href="glossario/#t">trader</a>, preciso de recomendações de <a href="glossario/#d">dimensionamento de posições</a> que considerem a <a href="glossario/#a">correlação</a> do <a href="glossario/#p">portfólio</a>
+- Como responsável por conformidade, preciso de limites máximos de posição e controles de risco</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Implementação do <a href="glossario/#c">Critério de Kelly</a> para dimensionamento ideal de posições
+- Métricas de risco em nível de <a href="glossario/#p">portfólio</a> (<a href="glossario/#v">VaR</a>, <a href="glossario/#a">análise de correlação</a>)
+- Recomendações de tamanho de posição com explicações sobre o risco
+- Parâmetros e limites de risco configuráveis</p>
+<h3 id="epic-5-desenvolvimento-de-api-de-backend">Epic 5: Desenvolvimento de API de Backend<a class="headerlink" href="#epic-5-desenvolvimento-de-api-de-backend" title="Permanent link">&para;</a></h3>
+<p><strong>Duração:</strong> Semanas 5 a 7 | <strong>Líder:</strong> Desenvolvedor Backend</p>
+<p><strong>Histórias de Usuários:</strong>
+- Como desenvolvedor frontend, preciso de APIs RESTful para todas as previsões e estatísticas de modelos
+- Como sistema, preciso de conexões WebSocket em tempo real para dados de mercado em tempo real
+- Como usuário, preciso de autenticação segura e gerenciamento de sessões
+- Como desenvolvedor, preciso de documentação abrangente da API</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Backend FastAPI ou Flask com documentação OpenAPI
+- Implementação de WebSocket para atualizações em tempo real
+- Sistema de autenticação JWT
+- Infraestrutura de tratamento e registro de erros</p>
+<h3 id="epic-6-interface-do-usuario-e-painel">Epic 6: Interface do Usuário e Painel<a class="headerlink" href="#epic-6-interface-do-usuario-e-painel" title="Permanent link">&para;</a></h3>
+<p><strong>Duração:</strong> Semanas 6 a 8 | <strong>Líder:</strong> Desenvolvedor Frontend</p>
+<p><strong>Histórias de Usuários:</strong>
+- Como investidor, preciso de um painel limpo que mostre as classificações atuais do <a href="glossario/#r">regime de mercado</a>
+- Como usuário, preciso de gráficos interativos exibindo previsões de modelos e <a href="glossario/#i">intervalos de confiança</a>
+- Como <a href="glossario/#t">trader</a>, preciso de uma visão de <a href="glossario/#p">portfólio</a> com recomendações de <a href="glossario/#d">dimensionamento de posições</a>
+- Como analista, preciso de recursos de detalhamento detalhado para ações individuais</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Painel React/Vue.js com design responsivo
+- Gráficos interativos usando Chart.js ou D3.js
+- Atualizações de dados em tempo real via WebSocket
+- ​​Interface otimizada para dispositivos móveis</p>
+<h3 id="epic-7-painel-de-estatisticas-e-analises">Epic 7: Painel de Estatísticas e Análises<a class="headerlink" href="#epic-7-painel-de-estatisticas-e-analises" title="Permanent link">&para;</a></h3>
+<p><strong>Duração:</strong> Semanas 7 a 9 | <strong>Liderança:</strong> Equipe Completa</p>
+<p><strong>Histórias de Usuário:</strong>
+- Como pesquisador, preciso de estatísticas detalhadas de desempenho para cada modelo de ML
+- Como usuário, preciso de resultados de <a href="glossario/#b">backtesting</a> com as principais métricas de desempenho (<a href="glossario/#i">índice de Sharpe</a>, <a href="glossario/#r">redução máxima</a>)
+- Como investidor, preciso de detalhamentos das classificações por setor e <a href="glossario/#c">capitalização de mercado</a>
+- Como desenvolvedor, preciso de monitoramento do desempenho do sistema e verificações de integridade</p>
+<p><strong>Critérios de Aceitação:</strong>
+- Painel de métricas de desempenho do modelo
+- Interface de <a href="glossario/#b">backtesting</a> histórico
+- Testes de significância estatística para previsões do modelo
+- Monitoramento e alertas do sistema</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.follow"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
