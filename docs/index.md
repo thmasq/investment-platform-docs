@@ -1,112 +1,212 @@
-# Plano de Projeto de Plataforma de Investimento
-*Projeto Universitário - 3 Meses | Tamanho da Equipe: 4*
+# Plataforma de Análise de Ações com Deep Learning
+*Projeto Universitário - Engenharia de Software | 3 Meses | Equipe: 4 alunos*
 
-## Visão Geral do Projeto
-Uma plataforma de investimento que utiliza redes neurais [XLSTM](glossario.md#x) e [finBERT](glossario.md#f) para análise inteligente de ações, com classificação de [regime de volatilidade](glossario.md#r), identificação de [reversão à média](glossario.md#r)/[momentum](glossario.md#m) e [dimensionamento automatizado de posições](glossario.md#d) com painel de estatísticas abrangente.
+## Visão Geral e Fundamentação Científica
 
-## Análise e Histórias de Usuários da Epic
+### Contexto Acadêmico
+Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glossario.md#d) e **Natural Language Processing (NLP)** aplicados ao mercado financeiro, baseado em pesquisas recentes que demonstram a eficácia de redes [LSTM](glossario.md#l) combinadas com modelos de linguagem especializados em finanças.
 
-### Epic 1: Infraestrutura e Coleta de Dados
-**Duração:** Semanas 1-2 | **Líder:** Engenheiro de Dados
+**Fundamentação Teórica:**
+- **Veisi et al. (2024)**: Demonstrou que a combinação de análise técnica, fundamental e processamento de notícias com [FinBERT](glossario.md#f) resulta em [Índice de Sharpe](glossario.md#i) de 1.46 e retorno cumulativo de 134.39%
+- **Sarlakifar et al. (2024)**: Mostrou que redes [xLSTM](glossario.md#x) superam [LSTM](glossario.md#l) tradicionais em trading automatizado, com melhor captura de dependências temporais
 
-**Histórias de Usuário:**
-- Como sistema, preciso coletar dados de ações em tempo real e históricos de fontes confiáveis ​​(Yahoo Finance, Alpha Vantage, etc.)
-- Como desenvolvedor, preciso de um pipeline de dados robusto que lide com dados ausentes, [ações corporativas](glossario.md#a) e verificações de qualidade de dados
-- Como sistema, preciso armazenar os dados processados ​​em um formato eficiente para consumo do modelo de ML
-- Como desenvolvedor, preciso de utilitários de pré-processamento de dados para engenharia de recursos
+### Objetivos de Aprendizagem
+1. Aplicar conceitos de **Machine Learning** em problemas reais
+2. Integrar **NLP** com análise quantitativa
+3. Desenvolver sistema web full-stack
+4. Implementar pipeline de dados e versionamento de modelos
+5. Praticar **metodologias ágeis** e trabalho em equipe
 
-**Critérios de Aceitação:**
-- Dados diários de [OHLCV](glossario.md#o) para mais de 500 ações de diversas [bolsas](glossario.md#b)
-- Integração de dados de sentimento de notícias para [finBERT](glossario.md#f)
-- Pipeline de validação e limpeza de dados
-- Banco de dados SQLite/PostgreSQL com indexação adequada
+## Escopo Realista e Limitações
 
-### Epic 2: Implementação do Modelo de ML
-**Duração:** Semanas 2 a 4 | **Líder:** Engenheiro de ML
+### O que SERÁ implementado:
+- Sistema educacional de análise de ações (não para trading real)
+- Modelo [LSTM](glossario.md#l) simples para previsão de tendências
+- Integração com [FinBERT](glossario.md#f) pré-treinado para [análise de sentimento](glossario.md#a)
+- Interface web para visualização de resultados
+- [Backtesting](glossario.md#b) básico com métricas educacionais
 
-**Histórias de Usuário:**
-- Como pesquisador quantitativo, preciso de um modelo [XLSTM](glossario.md#x) que possa capturar dependências de longo prazo em sequências de preços
-- Como sistema, preciso de integração com o [finBERT](glossario.md#f) para [análise de sentimento](glossario.md#a) de notícias financeiras e teleconferências de resultados
-- Como desenvolvedor, preciso de recursos de versionamento de modelos e rastreamento de experimentos
-- Como sistema, preciso de pipelines automatizados de retreinamento de modelos
+### O que NÃO será implementado:
+- Sistema de trading real com dinheiro
+- Implementação de [xLSTM](glossario.md#x) do zero (usaremos bibliotecas existentes)
+- Análise de 500+ ações (limitaremos a 10-15 ações principais)
+- Sistema de autenticação complexo
+- WebSockets em tempo real (dados será [batch processing](glossario.md#b))
 
-**Critérios de Aceitação:**
-- Implementação do [XLSTM](glossario.md#x) usando bibliotecas existentes (PyTorch/TensorFlow)
-- Integração com o [finBERT](glossario.md#f) para pontuação de sentimento
-- Benchmarks de desempenho do modelo e métricas de validação
-- Ambiente de treinamento em contêiner
+## Roadmap de Desenvolvimento
 
-### Epic 3: Regime de Mercado e Geração de Sinais
-**Duração:** Semanas 3 a 5 | **Líder:** Analista Quantitativo
+### Fase 1: Fundação (Semanas 1-3)
+**Líder: Engenheiro de Dados**
 
-**Histórias de Usuário:**
-- Como [trader](glossario.md#t), preciso identificar o [regime de volatilidade](glossario.md#r) atual (baixa/média/alta) para diferentes ações
-- Como sistema, preciso detectar oportunidades de [reversão à média](glossario.md#r) nos preços das ações
-- Como [trader](glossario.md#t), preciso identificar sinais de [momentum](glossario.md#m) para estratégias de acompanhamento de tendências
-- Como sistema, preciso de [intervalos de confiança](glossario.md#i) para cada classificação
+**Sprint 1.1: Setup do Projeto (Semana 1)**
+- Configuração do ambiente de desenvolvimento (Docker, Git, Python)
+- Criação da estrutura do repositório
+- Setup do pipeline CI/CD básico
+- Documentação inicial do projeto
 
-**Critérios de Aceitação:**
-- Classificador de [regime de volatilidade](glossario.md#r) com precisão de mais de 70% em dados históricos
-- Detecção de [reversão à média](glossario.md#r) usando testes estatísticos e recursos de ML
-- Identificação de [momentum](glossario.md#m) usando [indicadores técnicos](glossario.md#i) e [padrões de preços](glossario.md#p)
-- Métricas de qualidade de sinal e resultados de [backtesting](glossario.md#b)
+*Critérios de Aceitação:*
+- Repositório com estrutura padronizada
+- Ambiente Docker funcionando para todos os membros
+- README com instruções de setup
 
-### Epic 4: Mecanismo de Dimensionamento de Posição
-**Duração:** Semanas 4 a 6 | **Líder:** Desenvolvedor de [Gestão de Riscos](glossario.md#g)
+**Sprint 1.2: Coleta de Dados (Semanas 2-3)**
+- Implementação do coletor de dados usando Yahoo Finance API
+- Coleta de dados históricos para 10-15 ações selecionadas (AAPL, GOOGL, MSFT, AMZN, TSLA, etc.)
+- Coleta de headlines de notícias financeiras (usando APIs gratuitas)
+- Validação e limpeza dos dados
 
-**Histórias de Usuários:**
-- Como gestor de [portfólio](glossario.md#p), preciso de [dimensionamento dinâmico de posições](glossario.md#d) com base na [volatilidade](glossario.md#v) e nos níveis de confiança
-- Como sistema, preciso de tamanhos de posições ajustados ao risco usando o [Critério de Kelly](glossario.md#c) ou métodos semelhantes
-- Como [trader](glossario.md#t), preciso de recomendações de [dimensionamento de posições](glossario.md#d) que considerem a [correlação](glossario.md#a) do [portfólio](glossario.md#p)
-- Como responsável por conformidade, preciso de limites máximos de posição e controles de risco
+*Critérios de Aceitação:*
+- Dataset com 2+ anos de dados OHLCV para ações selecionadas
+- Base de notícias com pelo menos 1000 headlines por ação
+- Script de validação de qualidade dos dados
+- Documentação do esquema de dados
 
-**Critérios de Aceitação:**
-- Implementação do [Critério de Kelly](glossario.md#c) para dimensionamento ideal de posições
-- Métricas de risco em nível de [portfólio](glossario.md#p) ([VaR](glossario.md#v), [análise de correlação](glossario.md#a))
-- Recomendações de tamanho de posição com explicações sobre o risco
-- Parâmetros e limites de risco configuráveis
+### Fase 2: Modelos de ML (Semanas 4-6)
+**Líder: Especialista em ML**
 
-### Epic 5: Desenvolvimento de API de Backend
-**Duração:** Semanas 5 a 7 | **Líder:** Desenvolvedor Backend
+**Sprint 2.1: Modelo de Previsão LSTM (Semana 4)**
+- Implementação de [LSTM](glossario.md#l) básico usando TensorFlow/PyTorch
+- [Feature engineering](glossario.md#f): [indicadores técnicos](glossario.md#i) ([RSI](glossario.md#r), [MACD](glossario.md#m), Moving Averages)
+- Treinamento para predição de movimento de preços (alta/baixa/neutro)
 
-**Histórias de Usuários:**
-- Como desenvolvedor frontend, preciso de APIs RESTful para todas as previsões e estatísticas de modelos
-- Como sistema, preciso de conexões WebSocket em tempo real para dados de mercado em tempo real
-- Como usuário, preciso de autenticação segura e gerenciamento de sessões
-- Como desenvolvedor, preciso de documentação abrangente da API
+*Critérios de Aceitação:*
+- Modelo [LSTM](glossario.md#l) treinado com acurácia > 55% em dados de validação
+- [Pipeline de dados](glossario.md#p) de preprocessing reproducível
+- Notebooks Jupyter com análise exploratória
 
-**Critérios de Aceitação:**
-- Backend FastAPI ou Flask com documentação OpenAPI
-- Implementação de WebSocket para atualizações em tempo real
-- Sistema de autenticação JWT
-- Infraestrutura de tratamento e registro de erros
+**Sprint 2.2: Integração com FinBERT (Semana 5)**
+- Integração com modelo [FinBERT](glossario.md#f) pré-treinado via HuggingFace
+- Processamento de headlines para scores de [análise de sentimento](glossario.md#a)
+- Combinação de features técnicas com sentimento
 
-### Epic 6: Interface do Usuário e Painel
-**Duração:** Semanas 6 a 8 | **Líder:** Desenvolvedor Frontend
+*Critérios de Aceitação:*
+- [Pipeline de dados](glossario.md#p) de análise de sentimento funcionando
+- [Análise de correlação](glossario.md#a) entre sentimento e movimentos de preços documentada
+- Modelo combinado ([LSTM](glossario.md#l) + sentiment) com performance superior
 
-**Histórias de Usuários:**
-- Como investidor, preciso de um painel limpo que mostre as classificações atuais do [regime de mercado](glossario.md#r)
-- Como usuário, preciso de gráficos interativos exibindo previsões de modelos e [intervalos de confiança](glossario.md#i)
-- Como [trader](glossario.md#t), preciso de uma visão de [portfólio](glossario.md#p) com recomendações de [dimensionamento de posições](glossario.md#d)
-- Como analista, preciso de recursos de detalhamento detalhado para ações individuais
+**Sprint 2.3: Sistema de Backtesting (Semana 6)**
+- Implementação de [backtesting](glossario.md#b) simples
+- Métricas básicas: retorno total, [Índice de Sharpe](glossario.md#i), [maximum drawdown](glossario.md#m)
+- [Cross-validation temporal](glossario.md#c)
 
-**Critérios de Aceitação:**
-- Painel React/Vue.js com design responsivo
-- Gráficos interativos usando Chart.js ou D3.js
-- Atualizações de dados em tempo real via WebSocket
-- ​​Interface otimizada para dispositivos móveis
+*Critérios de Aceitação:*
+- Framework de [backtesting](glossario.md#b) com período out-of-sample
+- Relatório de performance com visualizações
+- Comparação com estratégia [buy-and-hold](glossario.md#b)
 
-### Epic 7: Painel de Estatísticas e Análises
-**Duração:** Semanas 7 a 9 | **Liderança:** Equipe Completa
+### Fase 3: Sistema Web (Semanas 7-9)
+**Líder: Desenvolvedor Full-Stack**
 
-**Histórias de Usuário:**
-- Como pesquisador, preciso de estatísticas detalhadas de desempenho para cada modelo de ML
-- Como usuário, preciso de resultados de [backtesting](glossario.md#b) com as principais métricas de desempenho ([índice de Sharpe](glossario.md#i), [redução máxima](glossario.md#r))
-- Como investidor, preciso de detalhamentos das classificações por setor e [capitalização de mercado](glossario.md#c)
-- Como desenvolvedor, preciso de monitoramento do desempenho do sistema e verificações de integridade
+**Sprint 3.1: API Backend (Semana 7)**
+- [API REST](glossario.md#a) usando [FastAPI](glossario.md#f)
+- Endpoints para previsões, dados históricos e métricas
+- Integração com modelos treinados
 
-**Critérios de Aceitação:**
-- Painel de métricas de desempenho do modelo
-- Interface de [backtesting](glossario.md#b) histórico
-- Testes de significância estatística para previsões do modelo
-- Monitoramento e alertas do sistema
+*Critérios de Aceitação:*
+- API documentada com Swagger
+- Testes unitários básicos
+- Deploy local funcionando
+
+**Sprint 3.2: Interface Frontend (Semana 8)**
+- Dashboard web usando React ou Vue.js
+- Gráficos de preços com Chart.js
+- Visualização de previsões e métricas
+
+*Critérios de Aceitação:*
+- Interface responsiva e intuitiva
+- Gráficos interativos funcionando
+- Deploy da aplicação completa
+
+**Sprint 3.3: Integração e Testes (Semana 9)**
+- Testes de integração
+- Otimização de performance
+- Documentação final
+
+### Fase 4: Validação e Apresentação (Semanas 10-12)
+**Líder: Equipe Completa**
+
+**Sprint 4.1: Experimentos e Validação (Semana 10)**
+- Experimentos comparativos (LSTM vs LSTM+Sentiment)
+- Análise estatística dos resultados
+- Identificação de limitações
+
+**Sprint 4.2: Documentação Acadêmica (Semana 11)**
+- Relatório técnico no formato de artigo
+- Análise crítica dos resultados
+- Discussão de trabalhos futuros
+
+**Sprint 4.3: Apresentação Final (Semana 12)**
+- Preparação da apresentação
+- Demo da plataforma
+- Defesa do projeto
+
+## Recursos Técnicos
+
+### Stack Tecnológico
+- **Backend**: Python, [FastAPI](glossario.md#f), SQLite
+- **ML**: TensorFlow/PyTorch, HuggingFace Transformers, pandas, scikit-learn
+- **Frontend**: React.js, Chart.js
+- **Infraestrutura**: [Docker](glossario.md#d), [CI/CD](glossario.md#c) com GitHub Actions
+- **Dados**: Yahoo Finance API, NewsAPI (com [rate limiting](glossario.md#r))
+
+### Datasets e Modelos
+- **Dados de Mercado**: Yahoo Finance (gratuito, 2+ anos de histórico)
+- **Notícias**: NewsAPI ou similar (com limitações de rate)
+- **FinBERT**: Modelo pré-treinado do HuggingFace
+- **Ações Selecionadas**: Top 10-15 por capitalização de mercado
+
+## Métricas de Sucesso
+
+### Técnicas
+- **Modelo de Previsão**: Acurácia > 55% (baseline: 50% random)
+- **Backtesting**: Sharpe Ratio > 0.5 (vs buy-and-hold)
+- **Sistema**: API com tempo de resposta < 2s
+- **Cobertura de Testes**: > 70%
+
+### Educacionais
+- **Documentação**: Relatório técnico completo (20+ páginas)
+- **Apresentação**: Demo funcional de 15 minutos
+- **Código**: Repositório bem estruturado e documentado
+- **Aprendizagem**: Cada membro domina sua área + conceitos gerais
+
+## Riscos e Mitigações
+
+### Riscos Técnicos
+- **Overfitting do modelo**: Mitigação via cross-validation temporal
+- **Dados insuficientes**: Usar múltiplas fontes e aumentar período histórico
+- **Performance do modelo**: Aceitar limitações e focar no aprendizado
+
+### Riscos de Projeto
+- **Complexidade excessiva**: Priorizar funcionalidades core
+- **Divergência da equipe**: Reuniões semanais obrigatórias
+- **Prazo apertado**: Buffer de 1 semana no cronograma
+
+## Resultados Esperados
+
+### Entregáveis
+1. **Código-fonte**: Repositório GitHub completo e documentado
+2. **Aplicação Web**: Sistema funcionando com deploy local
+3. **Relatório Técnico**: Documento acadêmico com análise dos resultados
+4. **Apresentação**: Demo e defesa do projeto
+5. **Dataset**: Conjunto de dados processados e validados
+
+### Aprendizados
+- Aplicação prática de ML em finanças
+- Desenvolvimento de sistema completo
+- Trabalho em equipe e metodologias ágeis
+- Análise crítica de resultados científicos
+- Comunicação técnica e apresentação
+
+## Cronograma Resumido
+
+| Fase | Duração | Foco Principal | Entregáveis |
+|------|---------|----------------|-------------|
+| 1 | Semanas 1-3 | Fundação e Dados | Setup + Dataset |
+| 2 | Semanas 4-6 | Modelos ML | LSTM + FinBERT + Backtesting |
+| 3 | Semanas 7-9 | Sistema Web | API + Frontend + Deploy |
+| 4 | Semanas 10-12 | Validação | Experimentos + Relatório + Apresentação |
+
+## Referências Científicas
+1. Veisi, M. et al. (2024). "A Deep Reinforcement Learning Approach Combining Technical and Fundamental Analyses with a Large Language Model for Stock Trading"
+2. Sarlakifar, F. et al. (2024). "A Deep Reinforcement Learning Approach to Automated Stock Trading, using xLSTM Networks"
+3. Yang, Y. et al. (2020). "FinBERT: A Pretrained Language Model for Financial Communications"
