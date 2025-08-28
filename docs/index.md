@@ -57,7 +57,7 @@ Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glo
 
 *Critérios de Aceitação:*
 - Dataset com 2+ anos de dados OHLCV para ações selecionadas
-- Base de notícias com pelo menos 1000 headlines por ação
+- Base de notícias com pelo menos 200 headlines por ação
 - Script de validação de qualidade dos dados
 - Documentação do esquema de dados
 
@@ -206,7 +206,27 @@ Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glo
 | 3 | Semanas 7-9 | Sistema Web | API + Frontend + Deploy |
 | 4 | Semanas 10-12 | Validação | Experimentos + Relatório + Apresentação |
 
+## Recursos de Código Aberto
+
+### Repositórios Disponíveis
+- **LSTM-PPO DRL Stock Trader**: https://github.com/MahanVeisi8/LSTMppo-DRL-StockTrader
+  - Implementação completa do framework LSTM-PPO para trading
+  - Integração com FinBERT para análise de sentimento
+  - Pipeline de backtesting e métricas de avaliação
+  - Código base que pode ser adaptado para o projeto acadêmico
+
+### Utilização dos Recursos
+O repositório de Veisi et al. fornece uma base sólida para o desenvolvimento, incluindo:
+- Estrutura do ambiente de trading
+- Implementação do algoritmo PPO com redes LSTM
+- Pipeline de processamento de dados financeiros
+- Sistema de recompensas e penalidades
+- Métricas de avaliação padronizadas
+
 ## Referências Científicas
-1. Veisi, M. et al. (2024). "A Deep Reinforcement Learning Approach Combining Technical and Fundamental Analyses with a Large Language Model for Stock Trading"
-2. Sarlakifar, F. et al. (2024). "A Deep Reinforcement Learning Approach to Automated Stock Trading, using xLSTM Networks"
-3. Yang, Y. et al. (2020). "FinBERT: A Pretrained Language Model for Financial Communications"
+
+1. **Veisi, Mahan, Sadra Berangi, Mahdi Shahbazi Khojasteh, and Armin Salimi-Badr.** "A Deep Reinforcement Learning Approach Combining Technical and Fundamental Analyses with a Large Language Model for Stock Trading." In *2024 14th International Conference on Computer and Knowledge Engineering (ICCKE)*, pp. 224-229. IEEE, 2024.
+
+2. **Sarlakifar, Faezeh, Mohammadreza Mohammadzadeh Asl, Sajjad Rezvani Khaledi, and Armin Salimi-Badr.** "A Deep Reinforcement Learning Approach to Automated Stock Trading, using xLSTM Networks." *arXiv preprint arXiv:2503.09655* (2025).
+
+3. **Yang, Yi, Mark Christopher Siy UY, and Allen Huang.** "FinBERT: A Pretrained Language Model for Financial Communications." *arXiv preprint arXiv:2006.08097* (2020).
