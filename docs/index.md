@@ -1,5 +1,4 @@
-# Plataforma de Análise de Ações com Deep Learning
-*Projeto Universitário - Engenharia de Software | 3 Meses | Equipe: 4 alunos*
+# Plataforma de Análise de Ações com Deep Learning (sem nome ainda)
 
 ## Visão Geral e Fundamentação Científica
 
@@ -10,14 +9,7 @@ Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glo
 - **Veisi et al. (2024)**: Demonstrou que a combinação de análise técnica, fundamental e processamento de notícias com [FinBERT](glossario.md#f) resulta em [Índice de Sharpe](glossario.md#i) de 1.46 e retorno cumulativo de 134.39%
 - **Sarlakifar et al. (2024)**: Mostrou que redes [xLSTM](glossario.md#x) superam [LSTM](glossario.md#l) tradicionais em trading automatizado, com melhor captura de dependências temporais
 
-### Objetivos de Aprendizagem
-1. Aplicar conceitos de **Machine Learning** em problemas reais
-2. Integrar **NLP** com análise quantitativa
-3. Desenvolver sistema web full-stack
-4. Implementar pipeline de dados e versionamento de modelos
-5. Praticar **metodologias ágeis** e trabalho em equipe
-
-## Escopo Realista e Limitações
+## Escopo até agora
 
 ### O que SERÁ implementado:
 - Sistema educacional de análise de ações (não para trading real)
@@ -154,32 +146,6 @@ Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glo
 - **Notícias**: NewsAPI ou similar (com limitações de rate)
 - **FinBERT**: Modelo pré-treinado do HuggingFace
 - **Ações Selecionadas**: Top 10-15 por capitalização de mercado
-
-## Métricas de Sucesso
-
-### Técnicas
-- **Modelo de Previsão**: Acurácia > 55% (baseline: 50% random)
-- **Backtesting**: Sharpe Ratio > 0.5 (vs buy-and-hold)
-- **Sistema**: API com tempo de resposta < 2s
-- **Cobertura de Testes**: > 70%
-
-### Educacionais
-- **Documentação**: Relatório técnico completo
-- **Apresentação**: Demo funcional de 15 minutos
-- **Código**: Repositório bem estruturado e documentado
-- **Aprendizagem**: Cada membro domina sua área + conceitos gerais
-
-## Riscos e Mitigações
-
-### Riscos Técnicos
-- **Overfitting do modelo**: Mitigação via cross-validation temporal
-- **Dados insuficientes**: Usar múltiplas fontes e aumentar período histórico
-- **Performance do modelo**: Aceitar limitações e focar no aprendizado
-
-### Riscos de Projeto
-- **Complexidade excessiva**: Priorizar funcionalidades core
-- **Divergência da equipe**: Reuniões semanais obrigatórias
-- **Prazo apertado**: Buffer de 1 semana no cronograma
 
 ## Resultados Esperados
 
