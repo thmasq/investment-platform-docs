@@ -164,7 +164,7 @@ Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glo
 - **Cobertura de Testes**: > 70%
 
 ### Educacionais
-- **Documentação**: Relatório técnico completo (20+ páginas)
+- **Documentação**: Relatório técnico completo
 - **Apresentação**: Demo funcional de 15 minutos
 - **Código**: Repositório bem estruturado e documentado
 - **Aprendizagem**: Cada membro domina sua área + conceitos gerais
