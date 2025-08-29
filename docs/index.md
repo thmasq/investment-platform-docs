@@ -1,6 +1,6 @@
-# Plataforma de Análise de Ações com Deep Learning (sem nome ainda)
+# Plataforma de Análise de Ações com Deep Learning
 
-## Visão Geral e Fundamentação Científica
+## Visão Geral
 
 ### Contexto Acadêmico
 
@@ -11,23 +11,25 @@ Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glo
 - **Veisi et al. (2024)**: Demonstrou que a combinação de análise técnica, fundamental e processamento de notícias com [FinBERT](glossario.md#f) resulta em [Índice de Sharpe](glossario.md#i) de 1.46 e retorno cumulativo de 134.39%
 - **Sarlakifar et al. (2024)**: Mostrou que redes [xLSTM](glossario.md#x) superam [LSTM](glossario.md#l) tradicionais em trading automatizado, com melhor captura de dependências temporais
 
-## Escopo até agora
+## Escopo
 
-### O que SERÁ implementado:
+### MVP:
 
 - Sistema educacional de análise de ações (não para trading real)
 - Modelo [LSTM](glossario.md#l) simples para previsão de tendências
 - Integração com [FinBERT](glossario.md#f) pré-treinado para [análise de sentimento](glossario.md#a)
 - Interface web para visualização de resultados
 - [Backtesting](glossario.md#b) básico com métricas educacionais
+- Análise de 10-15 ações principais (AAPL, GOOGL, MSFT, AMZN, TSLA, etc.)
+- Batch processing de dados
 
-### O que NÃO será implementado:
+### Funcionalidades futuras
 
-- Sistema de trading real com dinheiro
-- Implementação de [xLSTM](glossario.md#x) do zero (usaremos bibliotecas existentes)
-- Análise de 500+ ações (limitaremos a 10-15 ações principais)
-- Sistema de autenticação complexo
-- WebSockets em tempo real (dados será [batch processing](glossario.md#b))
+- Sistema de trading real
+- Implementação de [xLSTM](glossario.md#x) do zero
+- Análise de mais de 500 ações
+- Sistema de autenticação
+- Processamento de dados por WebSockets
 
 ## Roadmap de Desenvolvimento
 
