@@ -33,8 +33,6 @@ Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glo
 
 ### Fase 1: Fundação (Semanas 1-3)
 
-**Líder: Engenheiro de Dados**
-
 **Sprint 1.1: Setup do Projeto (Semana 1)**
 
 - Configuração do ambiente de desenvolvimento (Docker, Git, Python)
@@ -63,8 +61,6 @@ _Critérios de Aceitação:_
 - Documentação do esquema de dados
 
 ### Fase 2: Modelos de ML (Semanas 4-6)
-
-**Líder: Especialista em ML**
 
 **Sprint 2.1: Modelo de Previsão LSTM (Semana 4)**
 
@@ -104,8 +100,6 @@ _Critérios de Aceitação:_
 
 ### Fase 3: Sistema Web (Semanas 7-9)
 
-**Líder: Desenvolvedor Full-Stack**
-
 **Sprint 3.1: API Backend (Semana 7)**
 
 - [API REST](glossario.md#a) usando [FastAPI](glossario.md#f)
@@ -137,8 +131,6 @@ _Critérios de Aceitação:_
 - Documentação final
 
 ### Fase 4: Validação e Apresentação (Semanas 10-12)
-
-**Líder: Equipe Completa**
 
 **Sprint 4.1: Experimentos e Validação (Semana 10)**
 
