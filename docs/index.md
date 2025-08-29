@@ -167,15 +167,6 @@ _Critérios de Aceitação:_
 - **FinBERT**: Modelo pré-treinado do HuggingFace
 - **Ações Selecionadas**: Top 10-15 por capitalização de mercado
 
-## Resultados
-
-### Entregáveis
-
-1. **Código-fonte**: Repositório GitHub completo e documentado
-2. **Aplicação Web**: Sistema funcionando com deploy local
-3. **Relatório Técnico**: Documento acadêmico com análise dos resultados
-4. **Dataset**: Conjunto de dados processados e validados
-
 ## Cronograma Resumido
 
 | Fase | Duração     | Foco Principal   | Entregáveis                  |
