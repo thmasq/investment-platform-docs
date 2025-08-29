@@ -132,25 +132,13 @@ _Critérios de Aceitação:_
 - Otimização de performance
 - Documentação final
 
-### Fase 4: Validação e Apresentação (Semanas 10-12)
+### Fase 4: Validação (Semana 10)
 
 **Sprint 4.1: Experimentos e Validação (Semana 10)**
 
 - Experimentos comparativos (LSTM vs LSTM+Sentiment)
 - Análise estatística dos resultados
 - Identificação de limitações
-
-**Sprint 4.2: Documentação Acadêmica (Semana 11)**
-
-- Relatório técnico no formato de artigo
-- Análise crítica dos resultados
-- Discussão de trabalhos futuros
-
-**Sprint 4.3: Apresentação Final (Semana 12)**
-
-- Preparação da apresentação
-- Demo da plataforma
-- Defesa do projeto
 
 ## Recursos Técnicos
 
@@ -169,26 +157,25 @@ _Critérios de Aceitação:_
 - **FinBERT**: Modelo pré-treinado do HuggingFace
 - **Ações Selecionadas**: Top 10-15 por capitalização de mercado
 
-## Resultados Esperados
+## Resultados
 
 ### Entregáveis
 
 1. **Código-fonte**: Repositório GitHub completo e documentado
 2. **Aplicação Web**: Sistema funcionando com deploy local
 3. **Relatório Técnico**: Documento acadêmico com análise dos resultados
-4. **Apresentação**: Demo e defesa do projeto
-5. **Dataset**: Conjunto de dados processados e validados
+4. **Dataset**: Conjunto de dados processados e validados
 
 ## Cronograma Resumido
 
-| Fase | Duração       | Foco Principal   | Entregáveis                             |
-| ---- | ------------- | ---------------- | --------------------------------------- |
-| 1    | Semanas 1-3   | Fundação e Dados | Setup + Dataset                         |
-| 2    | Semanas 4-6   | Modelos ML       | LSTM + FinBERT + Backtesting            |
-| 3    | Semanas 7-9   | Sistema Web      | API + Frontend + Deploy                 |
-| 4    | Semanas 10-12 | Validação        | Experimentos + Relatório + Apresentação |
+| Fase | Duração     | Foco Principal   | Entregáveis                  |
+| ---- | ----------- | ---------------- | ---------------------------- |
+| 1    | Semanas 1-3 | Fundação e Dados | Setup + Dataset              |
+| 2    | Semanas 4-6 | Modelos ML       | LSTM + FinBERT + Backtesting |
+| 3    | Semanas 7-9 | Sistema Web      | API + Frontend + Deploy      |
+| 4    | Semana 10   | Validação        | Experimentos                 |
 
-## Recursos de Código Aberto
+## Recursos
 
 ### Repositórios Disponíveis
 
