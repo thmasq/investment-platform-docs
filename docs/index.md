@@ -1,4 +1,4 @@
-# Plataforma de Análise de Ações com Deep Learning
+::# Plataforma de Análise de Ações com Deep Learning
 
 Engenharia de Produto de Software - 2025.2
 
@@ -197,7 +197,7 @@ _Critérios de Aceitação:_
 
 ### Utilização dos Recursos
 
-O repositório de Veisi et al. fornece uma base sólida para o desenvolvimento, incluindo:
+O repositório de Veisi et al. fornece:
 
 - Estrutura do ambiente de trading
 - Implementação do algoritmo PPO com redes LSTM
