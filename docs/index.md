@@ -4,7 +4,7 @@
 
 ### Contexto Acadêmico
 
-Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glossario.md#d) e **Natural Language Processing (NLP)** aplicados ao mercado financeiro, baseado em pesquisas recentes que demonstram a eficácia de redes [LSTM](glossario.md#l) combinadas com modelos de linguagem especializados em finanças.
+Este projeto implementa conceitos de [**Deep Reinforcement Learning (DRL)**](glossario.md#d) e **Processamento de linguagem natural (NLP)** aplicados ao mercado financeiro, baseado em pesquisas recentes que demonstram a eficácia de redes [LSTM](glossario.md#l) combinadas com modelos de linguagem especializados em finanças.
 
 **Fundamentação Teórica:**
 
@@ -102,7 +102,7 @@ _Critérios de Aceitação:_
 
 ### Fase 3: Sistema Web (Semanas 7-9)
 
-**Sprint 3.1: API Backend (Semana 7)**
+**Sprint 3.1: API REST (Semana 7)**
 
 - [API REST](glossario.md#a) usando [FastAPI](glossario.md#f)
 - Endpoints para previsões, dados históricos e métricas
@@ -114,7 +114,7 @@ _Critérios de Aceitação:_
 - Testes unitários básicos
 - Deploy local funcionando
 
-**Sprint 3.2: Interface Frontend (Semana 8)**
+**Sprint 3.2: Frontend (Semana 8)**
 
 - Dashboard web usando React ou Vue.js
 - Gráficos de preços com Chart.js
@@ -122,7 +122,7 @@ _Critérios de Aceitação:_
 
 _Critérios de Aceitação:_
 
-- Interface responsiva e intuitiva
+- Interface funcionando
 - Gráficos interativos funcionando
 - Deploy da aplicação completa
 
