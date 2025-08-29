@@ -1,5 +1,15 @@
 # Plataforma de Análise de Ações com Deep Learning
 
+Engenharia de Produto de Software - 2025.2
+
+## Integrantes
+
+| Grupo | Nome           | Matrícula | Perfil                                             |
+| ----- | -------------- | --------- | -------------------------------------------------- |
+| 11    | André Silva    | 221007813 | [Hunter104](https:://github.com/Hunter104)         |
+| 11    | Thomas Queiroz | 211062526 | [thomasqz](https:://github.com/thomasqz)           |
+| 11    | Eduardo Sandes | 221008024 | [DiceRunner714](https:://github.com/DiceRunner714) |
+
 ## Visão Geral
 
 ### Contexto Acadêmico
