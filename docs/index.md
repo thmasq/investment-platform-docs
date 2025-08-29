@@ -1,4 +1,4 @@
-::# Plataforma de Análise de Ações com Deep Learning
+# Plataforma de Análise de Ações com Deep Learning
 
 Engenharia de Produto de Software - 2025.2
 
